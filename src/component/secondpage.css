@@ -1,0 +1,119 @@
+.sec-page {
+    padding-top: 0rem;
+}
+
+.sec-card-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #f3f3f3
+}
+
+.sec-card-f,
+.sec-card {
+    /* height: 380px; */
+    padding: 6rem 2rem;
+}
+
+@media screen and (max-width:768px) {
+
+    .sec-card-f {
+        padding: 0;
+        height: 100px;
+    }
+
+    .sec-card-f p {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        transform: translateY(110px);
+    }
+
+    .sec-card {
+        /* height: 380px; */
+        padding: 1rem 2rem !important;
+    }
+
+    .sec-card-f p {
+        font-size: 67px !important;
+        width: 100% !important;
+        height: fit-content;
+    }
+}
+
+.sec-card-f p {
+    font-family: 'roboto';
+    width: 150px;
+    height: 288px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 68px;
+    color: #363434;
+}
+
+.sec-card-f span {
+    color: var(--hero);
+}
+
+.sec-cards {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.sec-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.head {
+    display: flex;
+}
+
+.head h3::after {
+    content: '';
+    position: absolute;
+    background-color: var(--hero);
+    height: 2px;
+    display: flex;
+    width: 105px;
+}
+
+
+.head h3 {
+    color: var(--hero);
+    font-family: 'roboto';
+    font-size: 40px;
+}
+
+.desc>p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#desc-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 34px;
+    /* width: 360px; */
+}
+
+.my-text {
+    color: rgb(0, 0, 0) !important;
+    font-weight: 400 !important;
+    /* width: 300px; */
+}
+
+.sec-card:nth-child(2) {
+    background: linear-gradient(180deg, #131618 0%, rgba(19, 22, 24, 0.85) 100%);
+}

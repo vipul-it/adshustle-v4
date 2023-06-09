@@ -1,0 +1,8 @@
+
+html {
+    scroll-snap-type: y mandatory;
+}
+.child-section-main{
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
