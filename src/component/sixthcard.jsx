@@ -6,7 +6,6 @@ const sixthcard = () => {
             <div class="row   boxesContainer sixth-page-content">
                 <div className="col-xs-12 col-lg-4 s-card" id="spec">
                     <h2>Our <br></br><span>Specialities</span></h2>
-                    
                 </div>
 
                 <div class="col-xs-12 col-lg-4 cardBox" id="adv">

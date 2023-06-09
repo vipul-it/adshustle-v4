@@ -79,16 +79,16 @@
 }
 
 @keyframes spin {
-  0%,30.5%
+  0%, 26%
   {
     transform: translateY(0);
   }
 
-  35.5%, 63.5%{
+  33%, 60%{
     transform: translateY(-100%);
   }
 
-  68.5%, 95%{
+  66%, 93%{
     transform: translateY(-200%);
   }
 
@@ -98,15 +98,15 @@
 }
 
 @keyframes spin-desc {
-    0%,30.5% {
+    0%, 26% {
     transform: translateY(0%);
   }
 
-  35.5%, 63.5% {
+  33%, 60% {
     transform: translateY(-140%);
   }
 
-  68.5%, 96.6% {
+  66%, 93% {
     transform: translateY(-280%);
   }
 

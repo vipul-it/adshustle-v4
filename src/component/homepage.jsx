@@ -31,14 +31,14 @@ const Homepage = () => {
   return (
     <div className="section1">
       <AliceCarousel
-      animationDuration="2000"
+      animationDuration="1000"
       autoPlay="true"
       infinite="true"
       autoHeight="false"
       autoWidth="false"
       disableDotsControls="true"
       disableButtonsControls="true"
-      autoPlayInterval="4000"
+      autoPlayInterval="3000"
       mouseTracking items={items} />
 
       <div className="hero-page">
