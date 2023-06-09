@@ -2,6 +2,7 @@
     width: 100%;
     height: fit-content;
     background-color: var(--black);
+    bottom: 0;
 }
 
 .footer-content {

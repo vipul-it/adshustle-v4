@@ -1,5 +1,4 @@
 import emp1 from '../assets/team/emp01.png';
-import emp2 from '../assets/team/emp02.png';
 import emp4 from '../assets/team/emp04.png';
 import emp5 from '../assets/team/emp05.png';
 import emp6 from '../assets/team/emp06.png';

@@ -5,10 +5,10 @@ import './secondpage.css';
 const secondpage = () => {
     return (
         <>
-            <div className="sec-page">
+            <div className="sec-page" >
                 <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 sec-cards">
                     <div className="col-md sec-card-f">
-                        <p>What do we do<span>?</span></p>
+                        <p id='discover'>What do we do<span>?</span></p>
                     </div>
                     <div className="col-md sec-card">
                         <div className="head">

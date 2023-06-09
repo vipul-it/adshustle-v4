@@ -1,6 +1,6 @@
 import React from "react";
 import "./landingpage.css";
-import Homepage from "./homepage";
+import Homepage from "./Homepage";
 import Secondpage from "./secondpage";
 import Thirdpage from "./thirdpage";
 import Fifthpage from "./fifthpage";
@@ -12,6 +12,7 @@ import Sixthcard from "./sixthcard";
 import Fourthbanner from "./fourthbanner";
 import Footer from "./footer";
 import Navbar from "./navbar";
+import AboutUs from "./AboutUs";
 
 const landingpage = () => {
   return (
@@ -32,6 +33,9 @@ const landingpage = () => {
       </div>
       <div className="child-section-main">
         <Sixthcard />
+      </div>
+      <div className="child-section-main">
+        <AboutUs />
       </div>
       <div className="child-section-main">
         <Seventhpage />

@@ -8,6 +8,11 @@
     height: 66px;
     z-index: 999;
 }
+.nav-link{
+    cursor: pointer;
+    font-family: 'roboto'!important;
+    font-weight: 600;
+}
 
 @media screen and (max-width:650px) {
     .header{

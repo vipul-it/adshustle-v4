@@ -3,13 +3,13 @@ import './sixthcard.css';
 const sixthcard = () => {
     return (
         <>
-            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 boxesContainer sixth-page-content">
-                <div className="col-md s-card" id="spec">
+            <div class="row   boxesContainer sixth-page-content">
+                <div className="col-xs-12 col-lg-4 s-card" id="spec">
                     <h2>Our <br></br><span>Specialities</span></h2>
                     
                 </div>
 
-                <div class="col-md cardBox" id="adv">
+                <div class="col-xs-12 col-lg-4 cardBox" id="adv">
                     <div class="cardbody">
                         <div class="front">
                             <h3>Advertisers</h3>
@@ -37,7 +37,7 @@ const sixthcard = () => {
                     </div>
                 </div>
 
-                <div class="col-md cardBox" id="pub">
+                <div class="col-xs-12 col-lg-4 cardBox" id="pub">
                     <div class="cardbody">
                         <div class="front">
                             <h3>Publishers</h3>

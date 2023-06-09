@@ -1,11 +1,17 @@
 import React from 'react'
 import './event.css';
 
-import dubai from '../assets/events/dubai.jpeg';
-import delhi from '../assets/events/delhi.jpg';
-import unknown from '../assets/events/unknown.jpeg';
-import unknown1 from '../assets/events/unknown2.jpg';
-import unknown2 from '../assets/events/unknown3.jpg';
+
+
+import p1 from "../assets/ourpresence/1.jpg";
+import p2 from "../assets/ourpresence/2.jpg";
+import p3 from "../assets/ourpresence/3.jpg";
+import p4 from "../assets/ourpresence/4.jpg";
+import p5 from "../assets/ourpresence/5.jpg";
+import p6 from "../assets/ourpresence/6.jpg";
+import p7 from "../assets/ourpresence/7.jpg";
+import p8 from "../assets/ourpresence/8.jpg";
+import p9 from "../assets/ourpresence/9.jpg";
 
 
 import { GoLocation } from 'react-icons/go';
@@ -19,75 +25,33 @@ const event = () => {
                 </div>
                 <div className="event-carousel">
                     <div className="event">
-                        <img src={dubai} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Dubai</p>
-                        </div>
+                        <img src={p1} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={delhi} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Delhi</p>
-                        </div>
+                        <img src={p2} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={unknown} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Delhi</p>
-                        </div>
+                        <img src={p3} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={unknown1} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Noida</p>
-                        </div>
+                        <img src={p4} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={unknown2} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Delhi</p>
-                        </div>
+                        <img src={p5} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={dubai} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Dubai</p>
-                        </div>
+                        <img src={p6} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={delhi} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Delhi</p>
-                        </div>
+                        <img src={p7} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={unknown} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Delhi</p>
-                        </div>
+                        <img src={p8} alt="" />                       
                     </div>
                     <div className="event">
-                        <img src={unknown1} alt="" />
-                        <div className="event-title">
-                            <GoLocation />
-                            <p>Noida</p>
-                        </div>
+                        <img src={p9} alt="" />                       
                     </div>
-                    <div className="event">
-                        <img src={unknown2} alt="" />
-                        <div className="event-title ">
-                            <GoLocation />
-                            <p>Delhi</p>
-                        </div>
-                    </div>
+                    
                     
                 </div>
             </div>

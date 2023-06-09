@@ -32,6 +32,7 @@
     height: 100vh;
     top: 0;
     left: 0;
+    animation: slide-left 0.5s forwards;
     /* animation: slide-video 8s infinite; */
 }
 
@@ -87,8 +88,10 @@
 .word-desc {
     display: block;
     overflow: hidden;
-    height: 50px;
+    height: 30px;
     padding: 0px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     /* background-color: aquamarine; */
 }
 

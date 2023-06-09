@@ -2,19 +2,24 @@
     display: flex;
     position: relative;
     height: 100vh;
-    padding: 1rem 0;
+    padding: 0 0;
 }
 
 .about-left {
     width: 50%;
-    padding: 8rem 6rem;
+    padding: 4rem 6rem;
+    color: #fff;
+    background: linear-gradient(180deg, #131618 0%, rgba(19, 22, 24, 0.85) 100%);
+}
+.about-left span {
+    color: var(--hero)
 }
 
 .about-left>h3 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 40px;
     line-height: 75px;
     padding-bottom: 10px;
 }
@@ -31,18 +36,22 @@
 .about-desc p {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 34px;
+    
+    
 }
 
 .about-right {
     width: 50%;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .about-right img {
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 @media screen and (max-width:900px) {
@@ -52,88 +61,23 @@
 
     .about-left {
         width: 100%;
+       
     }
 
     .about-right {
         width: 100%;
+        
     }
 
     .about-right img {
         width: 100%;
         aspect-ratio: 3/2;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
 
-/* Blogs Section */
 
-.blogs {
-    display: flex;
-    /* max-height: 750px; */
-    overflow: hidden;
-}
-
-.blog-title {
-    width: 20%;
-    background: #F9F9F9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-.blog-title h3 {
-    color: var(--black);
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 56px;
-    line-height: 72px;
-}
-
-.blog-title span {
-    color: var(--hero);
-}
-
-.blog {
-    width: 40%;
-    aspect-ratio: 3/2;
-    object-fit: cover;
-    padding: 1rem 1rem;
-}
-
-.my-blog {
-    display: flex;
-    width: 100%;
-    padding: 1rem 1rem;
-}
-
-.blog,
-.my-blog iframe {
-    width: 100%;
-}
-
-
-@media screen and (max-width:900px) {
-    .blogs {
-        display: block;
-    }
-
-    .blog-title {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:706px) {
-    .blogs {
-        height: max-content !important;
-        overflow: auto;
-    }
-
-    .my-blog {
-        display: block;
-    }
-}
 
 /* Last Section */
 

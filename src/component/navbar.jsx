@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import {Link as ScrollLink} from "react-scroll"
 
 import { Link } from "react-router-dom";
 
 import Logo from "../assets/navbar/logo2.png";
-import aboutus from "../Routes/aboutus";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -32,15 +32,30 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about-us" className="nav-link text-white">
-                About Us
-              </Link>
+              
+              <ScrollLink
+              className="nav-link text-white"
+                  to="discover"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={800}
+                >
+                  About
+                </ScrollLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/contact-us" className="nav-link text-white">
-                Contact Us
-              </Link>
+              <ScrollLink
+              className="nav-link text-white"
+                  to="team"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={800}
+                >
+                  Contact
+                </ScrollLink>
             </li>
           </ul>
         </div>
