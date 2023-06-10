@@ -41,7 +41,7 @@ const Homepage = () => {
       autoPlayInterval="3000"
       mouseTracking items={items} />
 
-      <div className="hero-page">
+      <div className="hero-page" id="homepage">
         <div className="hero-content">
           <div className="mid-content">
             <h1>We</h1>
@@ -69,7 +69,7 @@ const Homepage = () => {
               >
                 Let's Talk
               </button>
-              <ContactUs />
+              
             </div>
 
             <button className="fw-normal" onClick={navigateToButton}>
@@ -79,7 +79,7 @@ const Homepage = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={800}
+                duration={600}
               >
                 Discover More
               </ScrollLink>

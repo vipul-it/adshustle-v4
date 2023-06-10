@@ -1,19 +1,21 @@
 import React from 'react'
+import './sixthpage.css';
 import './sixthcard.css';
-const sixthcard = () => {
+const Sixthcard = () => {
     return (
         <>
-            <div class="row   boxesContainer sixth-page-content">
-                <div className="col-xs-12 col-lg-4 s-card" id="spec">
-                    <h2>Our <br></br><span>Specialities</span></h2>
+            <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 boxesContainer sixth-page-content">
+                <div className="col-md s-card" id="spec">
+                    {/* <h2>Our <br></br><span>Specialities</span></h2> */}
+                    <h2>Our <span>Specialities</span></h2>
                 </div>
 
-                <div class="col-xs-12 col-lg-4 cardBox" id="adv">
-                    <div class="cardbody">
-                        <div class="front">
+                <div className="col-md cardBox" id="adv">
+                    <div className="cardbody">
+                        <div className="front">
                             <h3>Advertisers</h3>
                         </div>
-                        <div class="back">
+                        <div className="back">
                             <div className="s-desc">
                                 <p className="text-white">We offer tailored solutions to meet your
                                     advertising needs, whether you're looking to
@@ -36,12 +38,12 @@ const sixthcard = () => {
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-lg-4 cardBox" id="pub">
-                    <div class="cardbody">
-                        <div class="front">
+                <div className="col-md cardBox" id="pub">
+                    <div className="cardbody">
+                        <div className="front">
                             <h3>Publishers</h3>
                         </div>
-                        <div class="back">
+                        <div className="back">
                             <div className="s-desc">
                                 <p>Unlock your revenue potential with our cutting-
                                     edge technology. Our platform allows us to
@@ -68,4 +70,4 @@ const sixthcard = () => {
     )
 }
 
-export default sixthcard
+export default Sixthcard

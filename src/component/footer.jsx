@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./footer.css";
+import { Link as ScrollLink } from "react-scroll";
 
 import Logo from "../assets/footer/footer-logo.png";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
@@ -23,9 +24,6 @@ const footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="copyright">
-                <p>Copyright ©2023 Ads Hustle. All rights reserved.</p>
-              </div>
             </div>
             <div className="col right-footer">
               <div className="footer-map">
@@ -45,10 +43,54 @@ const footer = () => {
                 <div className="company">
                   <p id="cmp">Our Company</p>
                   <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Blogs</li>
-                    <li>Contact Us</li>
+                    <li>
+                      <ScrollLink
+                        className="nav-link text-white"
+                        to="homepage"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                      >
+                        Home
+                      </ScrollLink>
+                    </li>
+                    <li>
+                      <ScrollLink
+                        className="nav-link text-white"
+                        to="discover"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                      >
+                        About
+                      </ScrollLink>
+                    </li>
+                    <li>
+                      <ScrollLink
+                        className="nav-link text-white"
+                        to="spec"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                      >
+                        Specialities
+                      </ScrollLink>
+                    </li>
+                    <li>
+                      <ScrollLink
+                        className="nav-link text-white"
+                        to="team"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                      >
+                        Contact
+                      </ScrollLink>
+                    </li>
                   </ul>
                 </div>
 
@@ -66,6 +108,9 @@ const footer = () => {
                   </ul>
                 </div>
               </div>
+            </div>
+            <div className="copyright">
+              <p>Copyright ©2023 Ads Hustle. All rights reserved.</p>
             </div>
           </div>
         </div>

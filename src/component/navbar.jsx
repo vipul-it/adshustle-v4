@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import {Link as ScrollLink} from "react-scroll"
-
+import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
-
 import Logo from "../assets/navbar/logo2.png";
-
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -32,30 +29,42 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              
               <ScrollLink
-              className="nav-link text-white"
-                  to="discover"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={800}
-                >
-                  About
-                </ScrollLink>
+                className="nav-link text-white"
+                to="discover"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={600}
+              >
+                About
+              </ScrollLink>
             </li>
 
             <li className="nav-item">
               <ScrollLink
-              className="nav-link text-white"
-                  to="team"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={800}
-                >
-                  Contact
-                </ScrollLink>
+                className="nav-link text-white"
+                to="spec"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={600}
+              >
+                Specialities
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink
+                className="nav-link text-white"
+                to="team"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={600}
+              >
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>

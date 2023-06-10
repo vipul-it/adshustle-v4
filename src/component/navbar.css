@@ -12,6 +12,10 @@
     cursor: pointer;
     font-family: 'roboto'!important;
     font-weight: 600;
+    
+}
+.nav-link:hover{
+    color: var(--hero);
 }
 
 @media screen and (max-width:650px) {

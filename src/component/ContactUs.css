@@ -1,5 +1,5 @@
 
-input,
+form > input,
 textarea {
   color: #212629!important;
 }
@@ -10,7 +10,7 @@ textarea {
   padding: 5px 10px!important;
   border-color: var(--hero)!important;
 }
-/* .btn_close{
+.btn_close{
     padding: 25px;
     color: #212629;
-} */
+}

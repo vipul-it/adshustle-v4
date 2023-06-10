@@ -90,34 +90,37 @@
 .contact li {
     color: var(--white);
     font-family: 'lexend deca';
-    font-weight: 200;
+    font-weight: 350;
+   
 }
 
 .company,
 .contact p {
     color: var(--white);
     font-family: 'lexend deca';
+    font-weight: bold;
 }
 .footer-map iframe{
     border-radius: 10px;
-}
+} 
+
 #cmp,
 #con {
-    font-weight: 400;
+    font-weight: bold;
+    
 }
 
 
 .copyright {
- /* position: absolute;
-    bottom: 0; */
     width: 100%;
     display: flex; 
-    justify-content: start;
+    justify-content: center;
 }
 
 .copyright p {
     color: #818181;
-    margin: 70px 20px;
+    font-size: 14px;
+    margin: 5px 20px;
     
 }
 
@@ -133,9 +136,18 @@
         position: relative;
         top: 0px;
     }
+    .footer-map{
+        visibility: hidden;
+    }
+    .connect{
+        margin-left: 50%;
+    }
+
 }
 
 #address {
     position: relative;
     top: 8px;
+    
+    font-weight: bold;
 }
