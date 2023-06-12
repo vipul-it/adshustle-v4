@@ -14,10 +14,10 @@ import p9 from "../assets/ourpresence/9.jpg";
 import { Link as ScrollLink } from "react-scroll";
 
 import Logo from "../assets/footer/footer-logo.png";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const EighthP = () => {
   return (
@@ -105,6 +105,7 @@ const EighthP = () => {
                       className=""
                       href="mailto:support@adshustle.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       
                       <AiOutlineMail />
@@ -113,6 +114,7 @@ const EighthP = () => {
                       className=""
                       href="https://wa.me/918810535829"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <AiOutlineWhatsApp />
                     </a>
@@ -121,6 +123,7 @@ const EighthP = () => {
                       className=""
                       href="https://www.linkedin.com/company/adshustle-pvt-ltd/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaLinkedinIn />
                     </a>
