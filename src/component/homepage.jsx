@@ -10,18 +10,18 @@ import play from "../assets/homepage/images/play.jpg";
 import hustle from "../assets/homepage/images/We-hustle.jpg";
 
 import { useNavigate } from "react-router-dom";
-import ContactUs from "./ContactUs";
+
 
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img className="image_size" src={work} onDragStart={handleDragStart} role="presentation" />,
-  <img className="image_size" src={play} onDragStart={handleDragStart} role="presentation" />,
-  <img className="image_size" src={hustle} onDragStart={handleDragStart} role="presentation" />,
+  <img className="image_size" src={work} onDragStart={handleDragStart} role="presentation" alt="banner"/>,
+  <img className="image_size" src={play} onDragStart={handleDragStart} role="presentation" alt="banner" />,
+  <img className="image_size" src={hustle} onDragStart={handleDragStart} role="presentation" alt="banner" />,
 ];
 
 const Homepage = () => {
-  const [slideIn, setSlideIn] = useState(false);
+  const [slideIn] = useState(false);
   const navigate = useNavigate();
 
   const navigateToButton = () => {

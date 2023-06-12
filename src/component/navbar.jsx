@@ -70,8 +70,8 @@ const Navbar = () => {
         </div>
 
         <div className="hamburger">
-          <a
-            href=""
+          <Link
+            
             className="text-black hamburger-icon"
             onClick={(e) => {
               e.preventDefault();
@@ -79,7 +79,7 @@ const Navbar = () => {
             }}
           >
             <GiHamburgerMenu size="1.7rem" />
-          </a>
+          </Link>
         </div>
       </nav>
     </>

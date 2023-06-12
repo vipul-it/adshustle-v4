@@ -1,18 +1,18 @@
 import React from "react";
 import "./landingpage.css";
 import Homepage from "./Homepage";
-import Secondpage from "./secondpage";
-import Thirdpage from "./thirdpage";
+
 import Fifthpage from "./fifthpage";
 import Seventhpage from "./seventhpage";
 import Team from "./team";
 import Event from "./event";
 import Brands from "./brands";
 import Sixthcard from "./sixthcard";
-import Fourthbanner from "./fourthbanner";
+
 import Footer from "./footer";
 import Navbar from "./navbar";
 import AboutUs from "./AboutUs";
+import SecondP from "./SecondP";
 
 const landingpage = () => {
   return (
@@ -23,28 +23,28 @@ const landingpage = () => {
         <Homepage />
       </div>
       <div className="child-section-main">
-        <Secondpage />
-        <Thirdpage />
-        <Fourthbanner />
+       
+
+        <SecondP />
       </div>
 
       <div className="child-section-main">
         <Fifthpage />
       </div>
       <div className="child-section-main">
-        <Sixthcard />
+        {/* <Sixthcard /> */}
       </div>
       <div className="child-section-main">
-        <AboutUs />
+        {/* <AboutUs /> */}
       </div>
       <div className="child-section-main">
-        <Seventhpage />
-        <Brands />
+        {/* <Seventhpage /> */}
+        {/* <Brands /> */}
       </div>
       <div className="child-section-main">
-        <Team />
-        <Event />
-        <Footer />
+        {/* <Team /> */}
+        {/* <Event /> */}
+        {/* <Footer /> */}
       </div>
     </div>
   );
