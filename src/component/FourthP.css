@@ -1,6 +1,6 @@
 .sixth-page-content {
     margin: 0;
-    height: 100vh;
+    /* min-height: 100vh; */
 }
 
 #adv {
@@ -41,13 +41,13 @@
 
 .cardBox {
     padding: 0;
-    font-size: 1.2em;
-    perspective: 800px;
-    transition: all 0.3s ease 0s;
+    font-size: 1.2em; 
+    
 }
 
-.cardBox:hover .cardbody {
+.cardBox:hover .cardbody:hover {
     transform: rotateY(180deg);
+    transition:  0.4s ease-in;
 }
 
 .cardbody {
@@ -58,8 +58,8 @@
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
     width: 100%;
-    -webkit-animation: giro 1s 1;
-    animation: giro 1s 1;
+    /* -webkit-animation: giro 1s 1;
+    animation: giro 1s 1; */
 }
 
 .cardbody p {
@@ -83,24 +83,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
 }
 
 
 
 
-/* .cardbody .front strong {
-    background: #fff;
-    border-radius: 100%;
-    color: #222;
-    font-size: 1.5em;
-    line-height: 30px;
-    padding: 0 7px 4px 6px;
-} */
-
-
-
 .cardbody .back {
     transform: rotateY(180deg);
+    transition: all 0.4s ease-in 0.4s;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
 }
 
 
@@ -144,7 +140,7 @@
 }
 
 
-.cardBox:nth-child(2) .cardbody {
+/* .cardBox:nth-child(2) .cardbody {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
 }
@@ -152,26 +148,30 @@
 .cardBox:nth-child(3) .cardbody {
     -webkit-animation: giro 2s 1;
     animation: giro 2s 1;
-}
+} */
 
 
 @-webkit-keyframes giro {
     from {
         transform: rotateY(180deg);
+        transition: all 0.4s ease-in 0.4s;
     }
 
     to {
         transform: rotateY(0deg);
+        transition: all 0.4s ease-in 0.4s;
     }
 }
 
 @keyframes giro {
     from {
         transform: rotateY(180deg);
+        transition: all 0.4s ease-in 0.4s;
     }
 
     to {
         transform: rotateY(0deg);
+        transition: all 0.4s ease-in 0.4s;
     }
 }
 
@@ -274,7 +274,6 @@
         height: 100vh;
     }
 }
-
 .sixth-page-content {
     margin: 0;
     height: 100vh;
@@ -385,32 +384,140 @@
 
 
 
-/* demo code */
-/* 
-@media screen and (max-width:991px) {
-    .sixth-page-content {
-        margin: 0;
-        height: 300vh;
-        height: max-content;
-        display: block;
-    }
 
-    #spec {
-        width: 100%;
-    }
 
-    #spec h2 {
-        width: 100%;
-        text-align: center;
-    }
+#spec {
+    background-color: #F0F0F0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    #adv,
-    #pub {
-        width: 100% !important;
-        height: 100vh !important;
-    }
 
-    #pub {
-        background-color: chartreuse;
-    }
-} */
+#adv {
+    background: linear-gradient(180deg, #131618 0%, rgba(19, 22, 24, 0.85) 100%);
+}
+
+
+.s-card {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-card:nth-child(1)>h2 {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.s-card span {
+    color: var(--hero);
+}
+
+.s-card h3 {
+    color: var(--hero);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 32px;
+    font-size: 47px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.s-desc {
+    margin-top: 20px;
+}
+
+.s-desc p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.s-card h3::after {
+    content: '';
+    position: absolute;
+    background-color: var(--hero);
+    height: 2px;
+    display: flex;
+    width: 135px;
+    margin: 10px 0;
+}
+
+.s-card h2::after {
+    content: '';
+    position: absolute;
+    background-color: var(--hero);
+    height: 2px;
+    display: flex;
+    width: 200px;
+    margin: 1rem 0;
+}
+
+.key-points {
+    position: relative;
+}
+
+.key-points ul li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    list-style: none;
+}
+
+.key-points ul li::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--hero);
+    left: 0;
+    margin: 12px 0;
+}
+
+.s-card {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-card:nth-child(1)>h2 {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.s-card span {
+    color: var(--hero);
+}
+
+.s-card h3 {
+    color: var(--hero);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 32px;
+    font-size: 47px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+.s-card h3::after {
+    content: '';
+    position: absolute;
+    background-color: var(--hero);
+    height: 2px;
+    display: flex;
+    width: 135px;
+    margin: 10px 0;
+}

@@ -95,6 +95,7 @@
   background: url("../assets/fifthpage/line.png") no-repeat center;
   /* height: 140px; */
   width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,7 +445,9 @@
 
 .featured-card {
   padding-bottom: 0px;
-  height: fit-content;
+  height: 50px;
+  
+  
 }
 
 .f-card {
@@ -454,17 +457,21 @@
 }
 
 .card {
-  padding: 2rem 1rem!important;
+  padding: 1rem 2rem!important;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)!important;
   align-items: center!important;
   justify-items: center!important; 
   border: none!important;
   text-align: center!important;
-  font-size: 14px!important;
+  font-size: 13px!important;
+  
+ 
+  height: 280px;
+  gap: 10px !important;
 }
 
 .img {
-  width: fit-content;
+  
   background-color: #ececec;
   display: flex;
   border-radius: 50%;
@@ -482,8 +489,8 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px!important;
-  line-height: 20px;
+  font-size: 18px!important;
+  line-height: 28px!important;
   display: flex;
   align-items: center;
   color: #9d9d9d;
@@ -493,11 +500,11 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
   display: flex;
   align-items: center;
   color: var(--black);
   position: relative;
-  top: 10px;
+  top: 5px;
 }

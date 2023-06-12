@@ -82,7 +82,7 @@ const fifthpage = () => {
                   <img src={value.logo} alt="" />
                 </div>
                 <div className="title d-flex justify-content-center">
-                  <p>{value.title}</p>
+                  <p className="">{value.title}</p>
                 </div>
                 <div className="desc d-flex justify-content-center">
                   <p>{value.desc}</p>

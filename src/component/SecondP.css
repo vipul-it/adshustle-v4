@@ -2,12 +2,12 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  /* border: red 2px solid !important; */
   
 }
 
 .sec-page {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  
   height: 60vh;
   overflow: hidden;
   top: 0;
@@ -18,8 +18,7 @@
   
   overflow: hidden;
   height: 30vh;
-  
-  padding: auto 0;
+         
 }
 .fourth-page {
   width: 100%;
@@ -41,8 +40,8 @@
 
 .sec-card-f,
 .sec-card {
-  /* height: 380px; */
-  padding: 6rem 2rem;
+  height: 60vh;
+  padding: 7.2rem 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,7 +60,7 @@
   }
 
   .sec-card {
-    /* height: 380px; */
+    height: 30vh;
     padding: 4rem 2rem !important;
   }
 
@@ -74,7 +73,7 @@
 .sec-card-f p {
   font-family: "roboto";
   width: 150px;
-  /* height: 288px; */
+  height: 30vh !important;
   font-style: normal;
   font-weight: 700;
   font-size: 76px;
@@ -154,7 +153,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 3rem;
+  padding: 5.5rem 3rem;
+  height: 30vh;
   /* min-height: 200px !important; */
 }
 
@@ -212,6 +212,7 @@
   }
 }
 
+
 .wrapper-sec {
   width: inherit !important;
   width: auto;
@@ -239,25 +240,28 @@
   background: rgb(220, 101, 101);
   background: var(--hero);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 75px;
+  height: 88px;
   overflow: hidden;
   position: relative;
   width: 160%;
+  align-items: center;
 }
 
 .slider .slide-track {
   animation: scroll 15s linear infinite;
   display: flex;
   width: calc(250px * 14);
+  align-items: center;
 }
 
 .slider .slide {
-  height: 70px;
+  height: 90px;
   width: 250px;
   background-color: var(--hero);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
 }
 
 .slide p {
@@ -270,6 +274,7 @@
   margin-top: 10px;
   color: #140e07;
   margin: 0 auto;
+  align-items: center;
 }
 
 .slide p::after {
@@ -280,6 +285,7 @@
   border: 2px solid #140e07;
   border-radius: 50%;
   margin: 12px 34px;
+  text-align: center;
 }
 
 @keyframes scroll {

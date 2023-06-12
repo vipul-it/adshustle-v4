@@ -4,15 +4,12 @@ import Homepage from "./Homepage";
 
 import Fifthpage from "./fifthpage";
 
-import Team from "./team";
-import Event from "./event";
-
-import Footer from "./footer";
 import Navbar from "./navbar";
 import AboutUs from "./AboutUs";
 import SecondP from "./SecondP";
 import FourthP from "./FourthP";
 import SeventhP from "./SeventhP";
+import EighthP from "./EighthP";
 
 const landingpage = () => {
   return (
@@ -38,9 +35,7 @@ const landingpage = () => {
         <SeventhP />
       </div>
       <div className="child-section-main">
-        {/* <Team /> */}
-        {/* <Event /> */}
-        {/* <Footer /> */}
+        <EighthP />
       </div>
     </div>
   );
