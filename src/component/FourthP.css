@@ -274,3 +274,143 @@
         height: 100vh;
     }
 }
+
+.sixth-page-content {
+    margin: 0;
+    height: 100vh;
+}
+
+#spec {
+    background-color: #F0F0F0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#adv {
+    background: linear-gradient(180deg, #131618 0%, rgba(19, 22, 24, 0.85) 100%);
+}
+
+
+.s-card {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-card:nth-child(1)>h2 {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.s-card span {
+    color: var(--hero);
+}
+
+.s-card h3 {
+    color: var(--hero);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 32px;
+    font-size: 47px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.s-desc {
+    margin-top: 20px;
+}
+
+.s-desc p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.s-card h3::after {
+    content: '';
+    position: absolute;
+    background-color: var(--hero);
+    height: 2px;
+    display: flex;
+    width: 135px;
+    margin: 10px 0;
+}
+
+.s-card h2::after {
+    content: '';
+    position: absolute;
+    background-color: var(--hero);
+    height: 2px;
+    display: flex;
+    width: 200px;
+    margin: 1rem 0;
+}
+
+.key-points {
+    position: relative;
+}
+
+.key-points ul li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    list-style: none;
+}
+
+.key-points ul li::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--hero);
+    left: 0;
+    margin: 12px 0;
+}
+
+
+
+
+
+
+
+/* demo code */
+/* 
+@media screen and (max-width:991px) {
+    .sixth-page-content {
+        margin: 0;
+        height: 300vh;
+        height: max-content;
+        display: block;
+    }
+
+    #spec {
+        width: 100%;
+    }
+
+    #spec h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #adv,
+    #pub {
+        width: 100% !important;
+        height: 100vh !important;
+    }
+
+    #pub {
+        background-color: chartreuse;
+    }
+} */
